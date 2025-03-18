@@ -1,0 +1,11 @@
+body {
+    margin: 8px 1vw;
+}
+
+div.container {
+    margin: 10px 4vw;
+    height: 87vh;
+    aspect-ratio: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
