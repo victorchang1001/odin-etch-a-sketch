@@ -3,9 +3,9 @@ const resetButton = document.querySelector("button#resetButton");
 
 resetButton.addEventListener("click", (e) => {
     let count = prompt("Insert new grid size");
-    while (count > 100 || count <= 0) {
+        while (!Number.isInteger(Number(count)) || count > 100 || count <= 0) {
         count = prompt(
-            "Number of squares per side should be POSITIVE and should NOT EXCEED 100. Try again."
+            "Number of squares per side should be a POSITIVE INTEGER and should NOT EXCEED 100. Try again."
         );
     }
     container.replaceChildren();
